@@ -48,6 +48,7 @@ body {
   transform: translateX(-100%);
 }
 
+
 /* Profile */
 .profile {
   display: flex;
@@ -246,6 +247,26 @@ body {
     margin-left: 0;
   }
 }
+
+/* Sidebar toggle mobile fix */
+.sidebar-toggle {
+  position: relative;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 10px;
+    z-index: 2000; /* Above sidebar */
+  }
+}
+
 </style>
 </head>
 <body>
